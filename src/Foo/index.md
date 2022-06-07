@@ -10,7 +10,7 @@ Demo:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'note-wj';
+import { Foo } from 'sum-up';
 
 export default () => <Foo title="First Demo" />;
 ```

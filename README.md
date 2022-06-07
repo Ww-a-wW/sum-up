@@ -1,4 +1,4 @@
-# note-wj
+# sum-up
 
 ## Getting Started
 
