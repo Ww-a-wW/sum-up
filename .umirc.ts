@@ -12,5 +12,15 @@ export default defineConfig({
   logo: logo,
   outputPath: 'docs-dist',
   mode: 'site',
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+    ],
+  ],
   // more config: https://d.umijs.org/config
 });

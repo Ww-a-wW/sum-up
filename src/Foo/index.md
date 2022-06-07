@@ -2,6 +2,9 @@
 nav:
   title: Components
   path: /components
+group:
+  path: /components/first
+  order: 2
 ---
 
 ## Foo
