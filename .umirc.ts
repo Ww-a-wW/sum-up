@@ -1,9 +1,12 @@
 import { defineConfig } from 'dumi';
 
-const logo = '/images/logo.png';
+const defaultPath = '/sum-up';
+const baseUrl = process.env.NODE_ENV === 'production' ? defaultPath : '';
+const logo = `${baseUrl}/images/logo.png`;
 
 export default defineConfig({
-  publicPath: process.env.NODE_ENV === 'production' ? '/sum-up/' : '/',
+  base: defaultPath,
+  publicPath: `${baseUrl}/`,
   title: 'Hi !',
   favicon: logo,
   logo: logo,
