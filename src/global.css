@@ -1,0 +1,75 @@
+body {
+  color: #35393f;
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-26 {
+  font-size: 26px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-30 {
+  font-size: 30px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-34 {
+  font-size: 34px;
+}
+.fs-36 {
+  font-size: 36px;
+}
+.fs-38 {
+  font-size: 38px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+.fs-42 {
+  font-size: 42px;
+}
+.bold {
+  font-weight: bold;
+}
+.lighter {
+  font-weight: lighter;
+}
+.flex-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.color-default {
+  color: #35393f;
+}
+.color-ccc {
+  color: #ccc;
+}
+.color-fff {
+  color: #fff;
+}

@@ -22,5 +22,4 @@ export default defineConfig({
       },
     ],
   ],
-  // more config: https://d.umijs.org/config
 });
