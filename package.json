@@ -1,24 +1,21 @@
 {
-  "private": true,
-  "name": "note-wj",
+  "private": false,
+  "name": "sum-up",
   "version": "1.0.0",
-  "main": "lib/index.js",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
-    "build": "cross-env NODE_ENV=prod npm run clean && npm run build:types && gulp build",
+    "build": "father-build",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run build",
-    "prepare": "husky install",
-    "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
-    "clean": "rimraf lib esm dist"
+    "prepublishOnly": "npm run build"
   },
-  "module": "esm/index.js",
-  "typings": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "typings": "dist/index.d.ts",
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
@@ -28,84 +25,26 @@
     ],
     "*.ts?(x)": [
       "prettier --parser=typescript --write"
-    ],
-    "src/**/*.ts?(x)": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ],
-    "src/**/*.less": [
-      "stylelint --syntax less --fix",
-      "git add"
-    ],
-    "docs/**/*.ts?(x)": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
-    ],
-    "docs/**/*.less": [
-      "stylelint --syntax less --fix",
-      "git add"
     ]
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
   "dependencies": {
-    "@babel/runtime": "^7.17.9",
-    "@typescript-eslint/eslint-plugin": "^5.23.0",
-    "cpr": "^3.0.1",
-    "prop-types": "^15.8.1",
-    "react": "^18.1.0"
+    "antd": "^4.21.0",
+    "classnames": "^2.3.1",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.10",
-    "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/plugin-transform-runtime": "^7.17.10",
-    "@babel/preset-env": "^7.17.10",
-    "@babel/preset-react": "^7.16.7",
-    "@babel/preset-typescript": "^7.16.7",
-    "@commitlint/cli": "^16.2.4",
-    "@commitlint/config-conventional": "^16.2.4",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",
-    "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.3",
-    "@umijs/fabric": "^2.10.2",
+    "@umijs/fabric": "^2.8.1",
     "@umijs/test": "^3.0.5",
-    "dumi": "^1.1.40",
-    "dumi-theme-mobile": "^1.1.22",
-    "eslint": "^7.11.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-react": "^7.21.5",
-    "eslint-plugin-jest": "^24.0.1",
-    "eslint-plugin-unicorn": "^20.0.0",
-    "eslint-plugin-react-hooks": "^4.1.2",
+    "babel-plugin-import": "^1.13.5",
+    "dumi": "^1.1.0",
     "father-build": "^1.17.2",
     "gh-pages": "^3.0.0",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "husky": "^8.0.1",
-    "lint-staged": "8",
-    "prettier": "^2.6.2",
-    "react-docgen-typescript": "^2.2.2",
-    "react-dom": "^18.1.0",
-    "typescript": "^4.6.4",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
     "yorkie": "^2.0.0"
-  },
-  "sideEffects": [
-    "dist/*",
-    "esm/**/style/*",
-    "lib/**/style/*",
-    "*.less"
-  ]
+  }
 }

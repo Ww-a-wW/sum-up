@@ -1,11 +1,26 @@
 import { defineConfig } from 'dumi';
 
+const defaultPath = '/sum-up';
+const baseUrl = process.env.NODE_ENV === 'production' ? defaultPath : '';
+const logo = `${baseUrl}/images/logo.png`;
+
 export default defineConfig({
-  title: 'note-wj',
-  favicon:
-    'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
-  logo: 'https://user-images.githubusercontent.com/9554297/83762004-a0761b00-a6a9-11ea-83b4-9c8ff721d4b8.png',
+  base: defaultPath,
+  publicPath: `${baseUrl}/`,
+  title: 'Hi !',
+  favicon: logo,
+  logo: logo,
   outputPath: 'docs-dist',
   mode: 'site',
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+    ],
+  ],
   // more config: https://d.umijs.org/config
 });
