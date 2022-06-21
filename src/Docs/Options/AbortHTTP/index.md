@@ -15,7 +15,7 @@ const AbortHTTP: React.FC = (props) => {
     cancel('中断请求');
   };
   const handleFetch = (e) => {
-    axios(
+    axios.post('url',
       {
         //...paramsData
       },
