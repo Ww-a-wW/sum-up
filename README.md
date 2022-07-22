@@ -1,33 +1,38 @@
 # sum-up
 
+## 个人学习总结
+
 ## Getting Started
 
-Install dependencies,
+1. 安装依赖
 
-```bash
-$ npm i
+```
+npm i
 ```
 
-Start the dev server,
+2. 启动项目
 
-```bash
-$ npm start
+```
+npm start
 ```
 
-Build documentation,
+3. 构建发布
 
-```bash
-$ npm run docs:build
+- 打包
+
+```
+  npm run build
+
 ```
 
-Run test,
+- 编译文档
 
-```bash
-$ npm test
+```
+npm run docs:build
 ```
 
-Build library via `father-build`,
+- 发布到当前 github 的分支 gh-pages
 
-```bash
-$ npm run build
+```
+npm run docs:deploy
 ```
