@@ -1,8 +1,6 @@
-# sum-up
+# 个人学习总结
 
-## 个人学习总结
-
-## Getting Started
+## Start
 
 1. 安装依赖
 
@@ -22,7 +20,6 @@ npm start
 
 ```
   npm run build
-
 ```
 
 - 编译文档
