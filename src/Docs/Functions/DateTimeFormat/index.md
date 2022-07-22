@@ -1,8 +1,9 @@
 ---
 title: DateTimeFormat
+toc: menu
 ---
 
-## 时间日期格式转换
+#### 时间日期格式转换
 
 ```
 import { Moment } from 'moment';

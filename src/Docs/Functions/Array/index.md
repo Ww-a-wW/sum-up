@@ -1,8 +1,9 @@
 ---
 title: 数组操作
+toc: menu
 ---
 
-#### 1.数组转映射
+## 1、数组转映射
 
 ```
 export const arrayToMap = (arr: Array<any>, key: string) => {
@@ -15,7 +16,7 @@ export const arrayToMap = (arr: Array<any>, key: string) => {
 };
 ```
 
-#### 2.tree-->平级
+## 2、tree-->平级
 
 ```
 export const generateList = (data: Array<any>, key = 'children') => {
@@ -34,7 +35,7 @@ export const generateList = (data: Array<any>, key = 'children') => {
 };
 ```
 
-#### 3.平级-->tree 结构
+## 3、平级-->tree 结构
 
 ```
 export const getChildrenList = ({
@@ -61,7 +62,7 @@ export const getChildrenList = ({
 };
 ```
 
-#### 4.构建 TreeSelect 相关字段
+## 4、构建 TreeSelect 相关字段
 
 ```
 export function createSelectData({

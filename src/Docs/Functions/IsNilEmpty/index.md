@@ -3,9 +3,10 @@ group:
   title: 一些好用的工具函数
 order: 1
 title: isNilEmpty
+toc: menu
 ---
 
-## isNilEmpty
+#### isNilEmpty
 
 判断数据是否是 null undefined {} [] ''
 

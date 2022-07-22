@@ -1,8 +1,9 @@
 ---
 title: 操作存储
+toc: menu
 ---
 
-## 1.存储 loalStorage
+## 1、存储 loalStorage
 
 ```
 export const loalStorageSet = (key, value) => {
@@ -14,7 +15,7 @@ export const loalStorageSet = (key, value) => {
 };
 ```
 
-## 2.获取 localStorage
+## 2、获取 localStorage
 
 ```
 export const loalStorageGet = (key) => {
@@ -23,7 +24,7 @@ export const loalStorageGet = (key) => {
 };
 ```
 
-## 3.删除 localStorage
+## 3、删除 localStorage
 
 ```
 export const loalStorageRemove = (key) => {
@@ -32,7 +33,7 @@ export const loalStorageRemove = (key) => {
 };
 ```
 
-## 4.存储 sessionStorage
+## 4、存储 sessionStorage
 
 ```
 export const sessionStorageSet = (key, value) => {
@@ -45,7 +46,7 @@ export const sessionStorageSet = (key, value) => {
 
 ```
 
-## 5.获取 sessionStorage
+## 5、获取 sessionStorage
 
 ```
 
@@ -55,7 +56,7 @@ export const sessionStorageGet = (key) => {
 };
 ```
 
-## 6.删除 sessionStorage
+## 6、删除 sessionStorage
 
 ```
 export const sessionStorageRemove = (key) => {

@@ -1,8 +1,9 @@
 ---
 title: 操作cookie
+toc: menu
 ---
 
-#### 1,根据 key 值获取对应的 cookie
+## 1，根据 key 值获取 cookie
 
 ```
 export function get(key: string) {
@@ -20,7 +21,7 @@ export function get(key: string) {
 
 ```
 
-#### 2，设置 cookie
+## 2，设置 cookie
 
 ```
 /**
@@ -39,7 +40,7 @@ export function set(key: string, value: string, validity = 365) {
 }
 ```
 
-#### 3，删除 Cookie
+## 3，删除 Cookie
 
 ```
 export function remove(key: string) {

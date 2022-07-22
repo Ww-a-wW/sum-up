@@ -1,8 +1,9 @@
 ---
 title: 格式化数字
+toc: menu
 ---
 
-## 数字千分位，或百分比
+#### 数字格式化：千分位、百分比
 
 ```
 import React from 'react';
