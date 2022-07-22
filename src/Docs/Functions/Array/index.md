@@ -14,6 +14,7 @@ export const arrayToMap = (arr: Array<any>, key: string) => {
     return res;
   }, {});
 };
+
 ```
 
 ## 2、tree-->平级

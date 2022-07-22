@@ -7,11 +7,11 @@ toc: menu
 
 ```
 export const loalStorageSet = (key, value) => {
-    if (!key) return;
-    if (typeof value !== 'string') {
-        value = JSON.stringify(value);
-    }
-    window.localStorage.setItem(key, value);
+  if (!key) return;
+  if (typeof value !== 'string') {
+    value = JSON.stringify(value);
+  }
+  window.localStorage.setItem(key, value);
 };
 ```
 
@@ -19,8 +19,8 @@ export const loalStorageSet = (key, value) => {
 
 ```
 export const loalStorageGet = (key) => {
-    if (!key) return;
-    return window.localStorage.getItem(key);
+  if (!key) return;
+  return window.localStorage.getItem(key);
 };
 ```
 
@@ -28,8 +28,8 @@ export const loalStorageGet = (key) => {
 
 ```
 export const loalStorageRemove = (key) => {
-    if (!key) return;
-    window.localStorage.removeItem(key);
+  if (!key) return;
+  window.localStorage.removeItem(key);
 };
 ```
 
@@ -37,22 +37,20 @@ export const loalStorageRemove = (key) => {
 
 ```
 export const sessionStorageSet = (key, value) => {
-   if (!key) return;
-    if (typeof value !== 'string') {
-      value = JSON.stringify(value);
-    }
-    window.sessionStorage.setItem(key, value)
+  if (!key) return;
+  if (typeof value !== 'string') {
+    value = JSON.stringify(value);
+  }
+  window.sessionStorage.setItem(key, value);
 };
-
 ```
 
 ## 5、获取 sessionStorage
 
 ```
-
 export const sessionStorageGet = (key) => {
-   if (!key) return;
-    return window.sessionStorage.getItem(key)
+  if (!key) return;
+  return window.sessionStorage.getItem(key);
 };
 ```
 
@@ -60,8 +58,7 @@ export const sessionStorageGet = (key) => {
 
 ```
 export const sessionStorageRemove = (key) => {
-   if (!key) return;
-    window.sessionStorage.removeItem(key)
+  if (!key) return;
+  window.sessionStorage.removeItem(key);
 };
-
 ```

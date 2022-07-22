@@ -10,6 +10,7 @@ export const checkCardNo = (value) => {
   let reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
   return reg.test(value);
 };
+
 ```
 
 ## 2、校验是否包含中文
@@ -18,6 +19,7 @@ export const checkCardNo = (value) => {
 export const haveCNChars = (value) => {
   return /[\u4e00-\u9fa5]/.test(value);
 };
+
 ```
 
 ## 3、校验是否为中国大陆的邮政编码
@@ -26,6 +28,7 @@ export const haveCNChars = (value) => {
 export const isPostCode = (value) => {
   return /^[1-9][0-9]{5}$/.test(value.toString());
 };
+
 ```
 
 ## 4、校验是否为 IPv6 地址
@@ -40,6 +43,7 @@ export const isIPv6 = (str) => {
       : /^([\da-f]{1,4}:){7}[\da-f]{1,4}$/i.test(str),
   );
 };
+
 ```
 
 ## 5、校验是否为邮箱地址
@@ -48,6 +52,7 @@ export const isIPv6 = (str) => {
 export const isEmail = (value) => {
   return /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(value);
 };
+
 ```
 
 ## 6、校验是否为中国大陆手机号
