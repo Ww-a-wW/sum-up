@@ -7,7 +7,7 @@ const logo = `${baseUrl}/images/logo.png`;
 export default defineConfig({
   base: defaultPath,
   publicPath: `${baseUrl}/`,
-  title: '一十一',
+  title: 'WangJ-F',
   favicon: logo,
   logo: logo,
   outputPath: 'docs-dist',
