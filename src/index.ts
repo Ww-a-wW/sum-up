@@ -1,1 +1,1 @@
-// export { default as IsNilEmpty } from './Docs/Functions/IsNilEmpty';
+export { default as KnowledgeSystem } from './Docs/Options/KnowledgeSystem';
