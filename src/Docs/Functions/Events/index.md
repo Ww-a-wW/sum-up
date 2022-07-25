@@ -35,6 +35,16 @@ export const debounce = (fn, wait) => {
     }, wait);
   };
 };
+
+export const useDebounce = (fn, delay, dep: any = []) => {
+  useEffect(() => {
+    let timer: any = null;
+    timer = setTimeout(fn, delay);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [...dep]);
+};
+
 ```
 
 ## 3、节流函数
