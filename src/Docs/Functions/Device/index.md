@@ -1,6 +1,6 @@
 ---
 title: 设备
-toc: menu
+# toc: menu
 ---
 
 ## 1、判断是移动还是 PC 设备

@@ -1,6 +1,6 @@
 ---
 title: 数组操作
-toc: menu
+# toc: menu
 ---
 
 ## 1、数组转映射

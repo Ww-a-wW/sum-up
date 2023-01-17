@@ -1,6 +1,6 @@
 ---
 title: 操作存储
-toc: menu
+# toc: menu
 ---
 
 ## 1、存储 loalStorage

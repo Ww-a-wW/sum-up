@@ -1,6 +1,6 @@
 ---
 title: JavaScript操作
-toc: menu
+# toc: menu
 ---
 
 ## 1、阻止冒泡事件

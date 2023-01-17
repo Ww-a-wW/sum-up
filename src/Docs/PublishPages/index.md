@@ -4,7 +4,7 @@ nav:
   path: /docs
 group:
   title: 发布 github-pages
-toc: menu
+# toc: menu
 ---
 
 #### 发布 github-pages

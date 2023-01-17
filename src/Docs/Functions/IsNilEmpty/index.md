@@ -1,9 +1,9 @@
 ---
 group:
-  title: 一些好用的工具函数
+  title: 工具函数
 order: 1
 title: isNilEmpty
-toc: menu
+# toc: menu
 ---
 
 #### isNilEmpty

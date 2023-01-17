@@ -1,6 +1,6 @@
 ---
 title: 浏览器
-toc: menu
+# toc: menu
 ---
 
 ## 1、滚动到页面顶部

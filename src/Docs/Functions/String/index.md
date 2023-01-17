@@ -1,6 +1,6 @@
 ---
 title: 字符串操作
-toc: menu
+# toc: menu
 ---
 
 ## 驼峰命名转换成短横线命名
