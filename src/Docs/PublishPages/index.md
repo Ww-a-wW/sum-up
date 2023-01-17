@@ -1,5 +1,4 @@
 ---
-order: 1
 nav:
   title: 文档
   path: /docs
